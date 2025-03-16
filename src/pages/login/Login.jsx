@@ -8,6 +8,7 @@ export default function Login({ setIsAuthenticated }) {
   const navigate = useNavigate();
 
   const handleLogin = () => {
+    
     if (email === "admin@gmail.com" && password === "123") {
       localStorage.setItem("user", email);
       setIsAuthenticated(true);
@@ -28,16 +29,16 @@ export default function Login({ setIsAuthenticated }) {
         </div>
         <div className="loginRight">
           <div className="loginBox">
-            <input 
-              placeholder="Email" 
-              className="loginInput" 
+            <input
+              placeholder="Email"
+              className="loginInput"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <input 
+            <input
               type="password"
-              placeholder="Password" 
-              className="loginInput" 
+              placeholder="Password"
+              className="loginInput"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

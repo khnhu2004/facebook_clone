@@ -14,9 +14,11 @@ const ProtectedRoute = ({ isAuthenticated, children }) => {
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+ 
 
   // Kiểm tra authentication khi component mount
   useEffect(() => {
+    
     const checkAuth = () => {
       const user = localStorage.getItem("user");
       setIsAuthenticated(!!user);

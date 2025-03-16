@@ -63,17 +63,17 @@ export default function Topbar({ onLogout, isAuthenticated }) {
   // Hàm xử lý mở NotificationsPopup
   const handleShowNotifications = () => {
     setShowNotifications(true); // Mở NotificationsPopup
-    setShowRequests(false);     // Đóng FriendRequests
-    setShowMessages(false);     // Đóng MessagesPopup
-    setShowProfileMenu(false);  // Đóng ProfileMenu
+    setShowRequests(false);
+    setShowMessages(false);
+    setShowProfileMenu(false);
   };
 
   // Hàm xử lý mở ProfileMenu
   const handleShowProfileMenu = () => {
-    setShowProfileMenu(true);   // Mở ProfileMenu
-    setShowRequests(false);     // Đóng FriendRequests
-    setShowMessages(false);     // Đóng MessagesPopup
-    setShowNotifications(false); // Đóng NotificationsPopup
+    setShowProfileMenu(true);  
+    setShowRequests(false);
+    setShowMessages(false); 
+    setShowNotifications(false); 
   };
 
   return (

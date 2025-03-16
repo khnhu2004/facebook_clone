@@ -1,38 +1,129 @@
-.SidebarProfile {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    font-family: Arial, sans-serif;
-    width: 90%;
-}
-
-.SidebarProfileTop {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.SidebarProfileTop h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-}
-
-.SidebarProfileBio {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-    line-height: 1.5;
-}
-
-.SidebarProfileBottom {
-    margin-top: 10px;
-}
-
-.SidebarProfileBottom h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
-    margin: 0;
-}
+    .SidebarProfile {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif; /* Font giống Facebook */
+        width: 90%;
+    }
+    
+    .SidebarProfileTop {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    
+    .SidebarProfileTop h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+    }
+    
+    .SidebarProfileBio {
+        font-size: 14px;
+        color: #666;
+        margin-top: 5px;
+        line-height: 1.5;
+    }
+    
+    .SidebarProfileBottom {
+        margin-top: 15px;
+    }
+    
+    .friendsHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .SidebarProfileBottom h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #050505;
+        margin: 0;
+    }
+    
+    .seeAllFriends {
+        font-size: 14px;
+        color: #1b74e4; /* Màu xanh giống Facebook */
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    .seeAllFriends:hover {
+        color: #155ab2;
+        text-decoration: underline;
+    }
+    
+    .friendsCount {
+        font-size: 14px;
+        color: #606770;
+        margin-bottom: 15px;
+    }
+    
+    .friendsList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Lưới 3 cột */
+        gap: 10px;
+    }
+    
+    .friendItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+    
+    .friendItem:hover {
+        transform: scale(1.03); /* Hiệu ứng phóng to khi hover */
+    }
+    
+    .friendImageWrapper {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* Tỷ lệ 1:1 cho ảnh */
+    }
+    
+    .friendImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid #e5e5e5;
+    }
+    
+    .activeDot {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 12px;
+        height: 12px;
+        background-color: #31a24c; /* Màu xanh lá cho trạng thái đang hoạt động */
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+    
+    .friendInfo {
+        margin-top: 5px;
+    }
+    
+    .friendName {
+        font-size: 13px;
+        font-weight: 600;
+        color: #050505;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+    
+    .friendStatus {
+        font-size: 12px;
+        color: #606770;
+    }
